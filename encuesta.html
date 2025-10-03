@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Calidad de Servicio (Broma)</title>
+    <style>
+        /* Aquí va el código CSS del punto 2 */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #d63384;
+            border-bottom: 2px solid #ffe0f6;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #a8479e;
+            margin-top: 25px;
+            padding-left: 5px;
+        }
+        .pregunta {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        .opcion {
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .opcion input[type="radio"] {
+            margin-right: 10px;
+            accent-color: #a8479e;
+        }
+        .boton {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #a8479e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+        .boton:hover {
+            background-color: #8c3a81;
+        }
+        textarea {
+            width: 97%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+            min-height: 100px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Encuesta de Calidad de Servicio - Maria Sol</h1>
+    <p style="text-align: center; font-style: italic;">Instrucciones: Selecciona la opción que mejor describa la experiencia. Sé honesta SOLCITO!!</p>
+
+    <form id="encuestaForm">
+        
+        <div class="pregunta">
+            <h2>1. Ritmo y Sincronización:</h2>
+            <p>¿Cómo describirías el tempo musical de la actuación?</p>
+            
+            <label class="opcion"><input type="radio" name="p1" value="A"> A. Una balada suave y constante (Puntaje de experto).</label>
+            <label class="opcion"><input type="radio" name="p1" value="B"> B. Rock & Roll con solos de batería inesperados (Un poco caótico, pero con energía).</label>
+            <label class="opcion"><input type="radio" name="p1" value="C"> C. Un DJ que no conoce los *fade-outs* (Se detiene bruscamente, sin previo aviso).</label>
+            <label class="opcion"><input type="radio" name="p1" value="D"> D. Ruido blanco de TV estática (No hay ritmo, solo *meh*).</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>2. Técnica Lingüística (Movimiento de Lengua):</h2>
+            <p>¿El ejecutante utilizó las técnicas adecuadas?</p>
+            
+            <label class="opcion"><input type="radio" name="p2" value="A"> A. Un maestro de la precisión y el detalle (Nivel artesanal).</label>
+            <label class="opcion"><input type="radio" name="p2" value="B"> B. Un aspirador que solo tiene dos ajustes: "apagado" y "máxima potencia".</label>
+            <label class="opcion"><input type="radio" name="p2" value="C"> C. Un pintor de brocha gorda (Mucha área cubierta, poca finura).</label>
+            <label class="opcion"><input type="radio" name="p2" value="D"> D. ¿Hubo un perro buscando un tesoro en mi entrepierna?</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>3. La Intensidad del Momento (La Fuerza):</h2>
+            <p>¿Cómo calificarías el nivel de entusiasmo?</p>
+            
+            <label class="opcion"><input type="radio" name="p3" value="A"> A. "¡Al infinito y más allá!" (Una epopeya galáctica de placer).</label>
+            <label class="opcion"><input type="radio" name="p3" value="B"> B. El entusiasmo de alguien que está esperando que se acabe el semáforo en rojo.</label>
+            <label class="opcion"><input type="radio" name="p3" value="C"> C. Un acto de bondad forzada (Lo hace por compromiso, se nota).</label>
+            <label class="opcion"><input type="radio" name="p3" value="D"> D. Como una aspiradora *Roomba* que se ha quedado sin batería.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>4. La Resistencia/Duración:</h2>
+            <p>¿El acto fue suficientemente largo para tu satisfacción?</p>
+            
+            <label class="opcion"><input type="radio" name="p4" value="A"> A. El maratón de Boston, con una medalla de oro al final.</label>
+            <label class="opcion"><input type="radio" name="p4" value="B"> B. Un *sprint* de 100 metros: intenso, pero terminó demasiado pronto.</label>
+            <label class="opcion"><input type="radio" name="p4" value="C"> C. Como cuando se calienta la batería del taladro y hay que parar (Interrupciones frecuentes).</label>
+            <label class="opcion"><input type="radio" name="p4" value="D"> D. Duró lo mismo que la publicidad en YouTube que no puedes saltar.</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>5. El Factor Sorpresa (Innovación):</h2>
+            <p>¿Hubo algún movimiento nuevo o creativo que te sorprendiera gratamente?</p>
+            
+            <label class="opcion"><input type="radio" name="p5" value="A"> A. ¡Fue una clase magistral de creatividad! (Se ganó un 10 en originalidad).</label>
+            <label class="opcion"><input type="radio" name="p5" value="B"> B. Hizo lo de siempre, pero con más ganas.</label>
+            <label class="opcion"><input type="radio" name="p5" value="C"> C. El mismo movimiento de siempre. La innovación es un mito.</label>
+            <label class="opcion"><input type="radio" name="p5" value="D"> D. ¿Estaba usando el modo "piloto automático"?</label>
+        </div>
+
+        <div class="pregunta">
+            <h2>Comentarios y Sugerencias:</h2>
+            <p>Deje su comentario o queja aquí:</p>
+            <textarea name="comentarios" placeholder="Ej: 'Nicolas es un DIOS con la lengua y las manos' o 'Esto es lo mas parecido al cielo que vivi.'"></textarea>
+        </div>
+
+        <button type="submit" class="boton
